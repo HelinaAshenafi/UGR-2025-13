@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <script
+      src="https://kit.fontawesome.com/9a4c80d749.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img id="logo" src="images/logo.jpg" alt="logo of min addis" />
+      </div>
+      <div class="navbar">
+        <nav>
+          <ol>
+            <li>
+              <a
+                href="/HomePage.html"
+                style="text-decoration: none; color: black"
+                >Home</a
+              >
+            </li>
+            <li><a href="/AboutUs.html"> About Us</a></li>
+            <li><a href="/Tech.html">Tech</a></li>
+            <li><a href="/Holiday.html">Holiday</a></li>
+            <li><a href="/Education.html">Education</a></li>
+            <li><a href="/Entertainment.html">Entertainment</a></li>
+            <li><a href="/Others.html">Others</a></li>
+            <li><a href="/ContactUs.html">ContactUs</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="motto">
+        <h1><q>Never miss an event!</q></h1>
+      </section>
+      <section class="info">
+        <article>
+          <p>
+            Min Addis is an online platform where users get notified about
+            upcoming events taking place around them .The events could be both
+            educational as well as recreational .
+          </p>
+          <p>
+            You can also check about upcoming holidays so that you can rearrange
+            your schedules accordingly. Join our community and take advantage
+            for free .
+          </p>
+        </article>
+        <button
+          class="join-btn"
+          onClick="window.location.href='http://www.facebook.com';"
+        >
+          Join our community
+        </button>
+      </section>
+      <section class="photo-slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/event.jpg" alt="an image of a tech event" />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="images/concert.jpg"
+              alt="an image of people gathering at a concert"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="images/art gallery.jpg"
+              alt="an image of people gathering at an art gallery "
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="images/hiking.jpg"
+              alt="an image of people climbing a mountain "
+            />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </section>
+    </main>
+    <footer class="sticky">
+      <div id="name">Min Addis</div>
+      <div class="slogan"><q>Never miss an event !</q></div>
+      <div class="socials">
+        <ul class="icons">
+          <li>
+            <a href="https://twitter.com" class="twitter"
+              ><i class="fa-brands fa-twitter"
+                ><span class="invisible-text">Twitter</span></i
+              ></a
+            >
+          </li>
+          <li>
+            <a href="https://facebook.com" class="facebook"
+              ><i class="fa-brands fa-facebook-f"
+                ><span class="invisible-text">facebook</span></i
+              ></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://apps.apple.com/us/app/telegram-messenger/id686449807"
+              class="telegram"
+              ><i class="fa-brands fa-telegram"
+                ><span class="invisible-text">Telegram</span></i
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script/app.js"></script>
+  </body>
+</html>
